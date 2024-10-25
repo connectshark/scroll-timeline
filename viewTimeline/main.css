@@ -1,0 +1,15 @@
+.img {
+  animation: reveal linear both;
+  animation-timeline: view();
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    clip-path: inset(45% 20% 45% 20%);
+  }
+  30% {
+    opacity: 1;
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}

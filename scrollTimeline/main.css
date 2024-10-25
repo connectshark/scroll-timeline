@@ -1,0 +1,24 @@
+.gallery {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 100%;
+}
+
+.gallery .gallery__progress {
+  background-color: #f00;
+  width: 20%;
+  height: 100%;
+  animation: progress linear forwards;
+  animation-timeline: scroll();
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
